@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+@media only screen and (min-width:1000px)  {
+    .box{
+        padding:100px 200px;
+    }
+}
+
+form{
+    padding:20px;
+    color: #fff;
+    background-color:  #004763;
+}
+form .btn-color{
+    background-color: #fd9c2c;
+    color: #fff;
+    border-radius:5px;
+}
+form .btn-color:hover{
+    color: #fff;
+    border:1px solid #fd9c2c;;
+}
