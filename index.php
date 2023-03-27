@@ -167,12 +167,16 @@
                 <input class="btn btn-color" type="submit" name="charges_input" value="Get Charges">
             </div>
 
+           
+
             <div class="col-12 d-flex justify-content-center align-items-center pt-3">
                 <?php
-                    if($get_pickuppincode===$pickuppincode && $get_destination===$destination && $get_packtype===$packtype && $get_dimensions===$dmensions){
-                       ?>
-                        <button class="btn btn-color"> Rs <?php  echo $get_charges;?>/-</button>
-                       <?php
+                    if (isset($pickuppincode)) {
+                        if($get_pickuppincode===$pickuppincode && $get_destination===$destination && $get_packtype===$packtype && $get_dimensions===$dmensions){
+                            ?>
+                             <button class="btn btn-color"> Rs <?php  echo $get_charges;?>/-</button>
+                            <?php
+                         }
                     }
                 ?>
             </div>
