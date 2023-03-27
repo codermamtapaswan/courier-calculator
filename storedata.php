@@ -1,7 +1,7 @@
 <?php
 include("database.php");
  if(isset($_POST["Import_Data"])){
-		
+		print_r($_FILES);
 		$filename=$_FILES["uploadFile"]["tmp_name"];		
 		 if($_FILES["uploadFile"]["size"] > 0)
 		 {
